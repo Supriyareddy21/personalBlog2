@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<header>
+<h2>Supriya Blog</h2>
+<link rel="stylesheet" href="style1.css">
+</header>
+<body>
+<nav>
+   <a href="#" onclick="showSection('Home')">HOME</a>
+   <a href="#" onclick="showSection('About')">ABOUT</a>
+   <a href="#" onclick="showSection('Education')">EDUCATION</a>
+   <a href="#" onclick="showSection('Skills')">SKILLS</a>
+   <a href="#" onclick="showSection('Project')">PROJECTS</a>
+   <a href="#" onclick="showSection('Contact')">CONTACT</a>
+</nav>
+<div class="container">
+    <div class="blog-posts">
+        <div class="post">
+ <section>
+        <div class="profile">
+            <img src="image.jpeg" alt="Your Photo">
+            <h2>SUPRIYA</h2>
+            <h2><b><marquee direction="right", scrollamount="10">Hello welcome to my blog</marquee></b></h2>
+        </div>
+    </section>
+                 <section id="Home">
+            <h2>Welcome to my blog!</h2><p>I'm Supriya, and this blog is like a cozy corner where I share things I love.I'm probably snapping pics or exploring new hobbies. Come along for the ride, and let's make this space a fun and inspiring hangout!</p>
+</section>
+                <section id="About">
+            <p id ="ABOUT"><b>About Me</b><br>I'm Supriya, an ambitious individual, finds my passion in contributing to a dynamic work environment within a reputable company with a background rooted in determination.Not only a skilled person but also a good problem-solver.My commitment is to continuous learning and adaptability makes me valuable asset in corporate world. Through my blog, I aims to share insights, experiences, and inspiring others to pursue their professional goals with courage.</p>
+<h1>Recent post</h1>
+<img src="tiru.jpg" width="300" height="300"><br>
+<a href="god.jpg" width="200" height="200">Trip to Tirumala</a>
+</section>
+            <section id="Education">
+                   <h1>Education Qualifications</h1>
+
+<p>I'm pursuing Btech III yr in the field of CSEAIML in Mallareddy college of Engineering and Technology<br>
+
+   I have completed my intermediate from Prathiba Junior college<br>
+
+   I have completed my schooling from Apex Central School</p>
+</section>
+   <section id="Skills">
+     <h1>Technical Skills</h1>
+   <img src="java.jpg" width="200" height="200"><h2>JAVA</h2>
+ <img src="python.png" width="200" height="200"><h2>PYTHON</h2>
+</section>
+      <section id="Project">
+  <h2>Projects</h2>
+    <p>Air Canvas using openCV<br>
+    Travel Itinerary Suggestion<br>
+   Software Automation <br></p>
+</section>
+          <section id="Contact">
+         <h2>Contact Me</h2>
+      Email: rampuramsupriyareddy@gmail.com<br><br>
+      Instagram:supriya_reddy2108 </section>
+        </div>
+</div>
+</div>
+<footer>
+  &copy;2024 Supriya Blog.All rights reserved
+</footer>
+<script>
+    function showSection(sectionId) {
+        var sections = document.querySelectorAll('.container section');
+        sections.forEach(function (section) {
+            if (sectionId === 'Home') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        });
+        var selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+            selectedSection.style.display = 'block';
+        }
+    }
+</script>
+</body>
+</html>
